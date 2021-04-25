@@ -37,12 +37,12 @@ WIN_COMBINATIONS = [
   end
 
   def draw?(board) || draw?(board)
-    !won?(board) || draw?(board)
+    !won?(board) && full?(board)
   end
 
   def winner(board)
     if won?(board)
 
       board[won?(board)[0]]
-  end    
+  end
 end
