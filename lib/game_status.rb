@@ -34,9 +34,9 @@ WIN_COMBINATIONS = [
     board.all? do |position|
       position == "X" || position == "O"
     end
-end
+  end
 
-  def draw?(board) || draw?(board)
+  def draw?(board)
     !won?(board) && full?(board)
   end
 
